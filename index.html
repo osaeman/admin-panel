@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Login Page</title>
+  </head>
+  <body>
+    <!-- LOGIN SECTION -->
+    <section
+      class="
+        mt-5
+        d-flex
+        justify-content-center
+        align-items-center
+        login-section
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div
+            class="
+              col-md-5 col-sm-9 col-10
+              m-auto
+              border border-danger border-end-0 border-start-0
+              py-3
+            "
+          >
+            <div
+              class="
+                col-md-11 col-sm-11 col-11
+                m-auto
+                border border-secondary border-bottom-0 border-top-0
+              "
+            >
+              <!-- LOGIN FORM -->
+              <form class="login p-3">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >User Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control username_login"
+                    id="exampleFormControlInput1"
+                    placeholder="John Doe"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control password_login"
+                    id="exampleFormControlInput1"
+                    placeholder="****"
+                    value=""
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <p class="invalid-credentials text-danger"></p>
+                  <small class="text-primary">
+                    If you don't have an account here then first create your
+                    account.
+                    <br />
+                    <a
+                      class="text-dark text-decoration-none fs-6"
+                      href="./html/signup.html"
+                      >Click here</a
+                    >
+                    to Signup
+                  </small>
+                </div>
+                <div class="mb-3 text-center">
+                  <!-- <button class="btn btn-dark login_btn" type="submit">
+                    Login
+                  </button> -->
+                  <a class="btn btn-dark login_btn" role="button"> login </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="bg-dark mt-5">
+      <div class="container-fluid p-4 text-center text-light">
+        <p class="lead fs-6">copyright @ 2021, Admin Panel</p>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./functionality/login.js"></script>
+  </body>
+</html>

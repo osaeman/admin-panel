@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <title id="title">Pages</title>
+  </head>
+  <body>
+    <!-- -----------------------NAVBAR SECTION---------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger px-4 py-0">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/html/dashboard.html">AdminStrap</a>
+        <button
+          class="navbar-toggler p-0 border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="/html/dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active active-component px-2"
+                href="/html/pages.html"
+                >Pages</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="/html/posts.html">Posts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="/html/user.html">Users</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link px-2 dashboard_username"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="../index.html">log out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- -----------------------CREATE CONTENT SECTION---------------------- -->
+    <section class="p-4 bg-dark text-white">
+      <div class="container-fluid">
+        <div class="d-md-flex align-items-center">
+          <h1 class="">Pages</h1>
+          <p class="text-secondary px-md-2 lead my-md-auto fs-3">
+            Manage Website Pages
+          </p>
+          <div class="ms-auto">
+            <div class="dropdown">
+              <button
+                class="btn btn-light dropdown-toggle btn-sm"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+              >
+                Create Content
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    id="1"
+                    >Add page</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    id="2"
+                    >Add post</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    id="3"
+                    >Add user</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------DASHBOARD HEADING SECTION---------------------- -->
+    <section class="p-4">
+      <div class="bg-secondary container-fluid">
+        <nav style="--bs-breadcrumb-divider: '>'">
+          <ol class="breadcrumb p-1">
+            <li class="breadcrumb-item text-white p-1">Dashboard</li>
+            <li class="breadcrumb-item text-dark p-1 active">Pages</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+    <!-- -----------------------MAIN DASHBOARD SECTION---------------------- -->
+    <section class="p-4">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <!-- first -->
+          <div class="col-md-3">
+            <div class="card text-white mb-3">
+              <!-- <div class="card-header bg-danger">Dashboard</div> -->
+              <div class="card-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item border-0 border-bottom">
+                    Dashboard
+                  </li>
+                  <li
+                    class="
+                      bg-danger
+                      list-group-item
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      border-0 border-bottom
+                    "
+                  >
+                    Pages
+                    <span class="badge bg-secondary rounded-pill">14</span>
+                  </li>
+                  <li
+                    class="
+                      list-group-item
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      border-0 border-bottom
+                    "
+                  >
+                    Posts
+                    <span class="badge bg-secondary rounded-pill">2</span>
+                  </li>
+                  <li
+                    class="
+                      list-group-item
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      border-0 border-bottom
+                    "
+                  >
+                    Users
+                    <span class="badge bg-secondary rounded-pill">1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- fourth -->
+          <div class="col-md-9">
+            <div class="card">
+              <div class="card-header bg-danger text-white">Website Pages</div>
+              <div class="m-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="filter"
+                  value=""
+                />
+              </div>
+              <div class="card-body table-responsive">
+                <table class="table table-striped table-hover">
+                  <tbody id="table-body">
+                    <tr class="fw-bold">
+                      <!--  -->
+                      <td>TITLE</td>
+                      <td>PUBLISHED</td>
+                      <td>CREATED</td>
+                      <td></td>
+                    </tr>
+                    <tr class="delo">
+                      <td>Jacob</td>
+                      <td>Yes</td>
+                      <td>12-DEC-2021</td>
+                      <td>
+                        <a
+                          type="button"
+                          class="btn btn-outline-secondary btn-sm del"
+                          href="/html/editpage.html"
+                        >
+                          Edit
+                        </a>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm my-2 del"
+                        >
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="delo">
+                      <td>Thornton</td>
+                      <td>No</td>
+                      <td>12-DEC-2021</td>
+                      <td>
+                        <a
+                          type="button"
+                          class="btn btn-outline-secondary btn-sm"
+                          href="/html/editpage.html"
+                        >
+                          Edit
+                        </a>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm my-2 del"
+                        >
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="delo">
+                      <td>Thornton</td>
+                      <td>Yes</td>
+                      <td>12-DEC-2021</td>
+                      <td>
+                        <a
+                          type="button"
+                          class="btn btn-outline-secondary btn-sm"
+                          href="/html/editpage.html"
+                        >
+                          Edit
+                        </a>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm my-2 del"
+                        >
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="delo">
+                      <td>Thornton</td>
+                      <td>Yes</td>
+                      <td>12-DEC-2021</td>
+                      <td>
+                        <a
+                          type="button"
+                          class="btn btn-outline-secondary btn-sm"
+                          href="/html/editpage.html"
+                        >
+                          Edit
+                        </a>
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm my-2 del"
+                        >
+                          Delete
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <section class="bg-dark mt-5">
+      <div class="container-fluid p-4 text-center text-light">
+        <p class="lead">copyright @ 2021, Admin Panel</p>
+      </div>
+    </section>
+
+    <!-- MODAL SECTION -->
+    <section>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel"></h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="" class="form_template"></form>
+            </div>
+            <div class="modal-footer">
+              <p class="warning-text"></p>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary" id="save">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../functionality/practice.js"></script>
+    <script src="../functionality/filtering.js"></script>
+  </body>
+</html>

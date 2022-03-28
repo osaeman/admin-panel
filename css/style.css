@@ -1,0 +1,25 @@
+.bor1 {
+  border: 1px solid blue;
+}
+
+.active-component {
+  background-color: #ab2e3a;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.nav-item:hover {
+  background-color: #f25564;
+}
+
+/* @media (max-width: 988px) {
+  .nav-item:hover {
+    background-color: none;
+  }
+} */
+
+.login-section {
+  height: 70vh;
+}
